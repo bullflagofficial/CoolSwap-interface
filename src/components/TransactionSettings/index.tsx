@@ -233,7 +233,7 @@ export default function SlippageTabs({ rawSlippage, setRawSlippage, deadline, se
         <RowFixed>
           <OptionCustom style={{ width: '80px' }} tabIndex={-1}>
             <Input
-              color={!!deadlineError ? 'red' : undefined}
+              color={deadlineError ? 'red' : undefined}
               onBlur={() => {
                 parseCustomDeadline((deadline / 60).toString());
               }}
